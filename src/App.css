@@ -20,24 +20,114 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
+
+
+
+a:hover{
+  color:black;
+}
+  
+.slots, .day{
+  font-size: 1.5vw;
+  font-weight:bold ;
+}
 .sub{
-  width:10%;
+  
+  border: solid 2px black ;
+  transition: transform 0.5s, border-radius 0.5s , font-weight 0.5s;
+  font-size: 1.5vw;
+  width:3vw!important;
+  overflow: hidden;
+}
+.sub:hover{
+  transform: scale(1.2);
+  border: solid 2px black ;
+  border-radius: 20px;
+  color:black;
+  box-shadow: 1px;
+
+  
 }
 
 table , th, td{
-  border: solid 2px black ;
+  border: solid 2px black;
+  border-collapse: separate;
+  border-radius: 0.7em;
+  overflow: hidden;
+  height: 5vw;
+  
 }
+table{
+  
+  table-layout: fixed;
+  width: 70%;
+}
+
+.day{
+  color:brown;
+  
+  
+}
+
+@media (max-width: 600px)
+{
+  .day{
+    font-size: 2vw;
+   
+  }
+  table{
+  table-layout: fixed;
+  width:90%;
+  }
+  .sub{
+    font-size: 2vw;
+  }
+  
+}
+
+
+
+th, td{
+  
+  overflow-x: hidden;
+}
+
+.a, .at{
+  background-color: red;
+}
+.b, .bt{
+  background-color: blue;
+}
+
+.c, .ct{
+  background-color: green;
+}
+
+.d, .dt{
+  background-color: orange;
+}
+
+.e{
+  background-color: cyan;
+}
+
+.f{
+  background-color: brown;
+}
+
+.g{
+  background-color: violet;
+}
+
+.lunch{
+  width: 2.5vw;
+}
+
+
 
 a{
   text-decoration: none;
   color:black;
 }
+
