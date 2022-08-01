@@ -5,11 +5,6 @@ const TimeTableView=()=>{
     const [htmcode,setHTM]=useState(<div>hell</div>)
     const [val,setVal]=useState(4);
     let url,sub,c1span,b1vis,b1c1,mlurl;
-    // let url= [["https://zoom.us/j/97990663010?pwd=NU5CRkJRTzF0azJnK0tLRXFyekJ4Zz09" , "control" ,"","",""],
-    //                     ["em","https://zoom.us/j/93120697441?pwd=S0ViTVZLM3ZqSXAvVkcvUmF1Y2NMZz09","https://zoom.us/j/97990663010?pwd=NU5CRkJRTzF0azJnK0tLRXFyekJ4Zz09","","control"],
-    //                     ["control","","em","","https://zoom.us/j/93120697441?pwd=S0ViTVZLM3ZqSXAvVkcvUmF1Y2NMZz09",""],
-    //                     ["https://zoom.us/j/93120697441?pwd=S0ViTVZLM3ZqSXAvVkcvUmF1Y2NMZz09","https://zoom.us/j/97990663010?pwd=NU5CRkJRTzF0azJnK0tLRXFyekJ4Zz09","control","","em"],
-    //                     ["","em","https://zoom.us/j/93120697441?pwd=S0ViTVZLM3ZqSXAvVkcvUmF1Y2NMZz09","","https://zoom.us/j/97990663010?pwd=NU5CRkJRTzF0azJnK0tLRXFyekJ4Zz09"]];
 
     console.log(url);
     const click=(event)=>{
@@ -167,8 +162,7 @@ const TimeTableView=()=>{
 
 
 
-return( htmcode
-)
+return( htmcode)
 
 }
 

@@ -1,10 +1,15 @@
 .App {
   text-align: center;
+  background: linear-gradient(to left, rgb(84, 51, 255), rgb(32, 189, 255), rgb(165, 254, 203));
+  height: 100vh;
 }
 
 
 
-
+h1{
+   padding: 2vw 0 0 0;
+   font-size: 4vw;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -36,12 +41,14 @@ a:hover{
   
   border: solid 2px black ;
   transition: transform 0.5s, border-radius 0.5s , font-weight 0.5s;
-  font-size: 1.5vw;
+  font-size: 1.8vw;
   width:3vw!important;
   overflow: hidden;
+  font-family: 'Mouse Memoirs', sans-serif;
+ 
 }
 .sub:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
   border: solid 2px black ;
   border-radius: 20px;
   color:black;
@@ -50,18 +57,25 @@ a:hover{
   
 }
 
-table , th, td{
+th, td{
   border: solid 2px black;
   border-collapse: separate;
   border-radius: 0.7em;
   overflow: hidden;
   height: 5vw;
+  border-spacing: 10px;
   
 }
 table{
-  
+  border-radius: 1.6em;
+  border-collapse: separate;
+  border: solid 2px rgb(253, 253, 253);
   table-layout: fixed;
+  box-sizing: content-box;
+  padding: 10px;
   width: 70%;
+  background-color: rgba(255,255,255,0.5);
+  box-shadow: 3px 10px 20px ;
 }
 
 .day{
@@ -70,7 +84,7 @@ table{
   
 }
 
-@media (max-width: 600px)
+@media (max-width: 768px)
 {
   .day{
     font-size: 2vw;
@@ -81,7 +95,7 @@ table{
   width:90%;
   }
   .sub{
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
   
 }
@@ -94,35 +108,41 @@ th, td{
 }
 
 .a, .at{
-  background-color: red;
+  background:radial-gradient(circle, rgb(230, 200, 32) 6%, rgb(238, 135, 51) 96%);
 }
 .b, .bt{
-  background-color: blue;
+  background:radial-gradient(circle, rgb(227, 230, 232) 6%, rgb(51, 154, 238) 96%);
 }
 
 .c, .ct{
-  background-color: green;
+  background:radial-gradient(circle, rgb(176, 241, 211) 6%, rgb(34, 220, 74) 96%);
 }
 
 .d, .dt{
-  background-color: orange;
+  background:radial-gradient(circle, rgb(241, 238, 222) 6%, rgb(228, 232, 3) 96%);
 }
 
 .e{
-  background-color: cyan;
+  background:radial-gradient(circle, rgb(234, 213, 228) 6%, rgb(237, 114, 211) 96%);
 }
 
 .f{
-  background-color: brown;
+  background:radial-gradient(circle, rgb(240, 193, 172) 6%, rgb(220, 89, 77) 96%);
 }
 
-.g{
-  background-color: violet;
+.g,.d1{
+  background:radial-gradient(circle, rgb(215, 196, 237) 6%, rgb(162, 89, 244) 96%);
 }
 
 .lunch{
-  width: 2.5vw;
+  width: 2vw;
+  background:radial-gradient(circle, rgb(228, 226, 215) 6%, rgb(137, 225, 83) 96%)
 }
+.p1{ background:radial-gradient(circle, rgb(246, 245, 240) 6%, rgb(238, 138, 95) 96%)}
+.q1{ background:radial-gradient(circle, rgb(246, 245, 240) 6%, rgb(95, 238, 216) 96%)}
+.s1{ background:radial-gradient(circle, rgb(246, 245, 240) 6%, rgb(91, 107, 230) 96%)}
+.b1{ background:radial-gradient(circle, rgb(246, 245, 240) 6%, rgb(238, 95, 193) 96%)}
+.sem{ background:radial-gradient(circle, rgb(246, 245, 240) 6%, rgb(235, 71, 59) 96%)}
 
 
 
