@@ -4,7 +4,7 @@ const TimeTableView=()=>{
     //const [url,setUrl]= useState([[]]);
     const [htmcode,setHTM]=useState(<div>hell</div>)
     const [val,setVal]=useState(4);
-    let url,sub;
+    let url,sub,c1span,b1vis,b1c1,mlurl;
     // let url= [["https://zoom.us/j/97990663010?pwd=NU5CRkJRTzF0azJnK0tLRXFyekJ4Zz09" , "control" ,"","",""],
     //                     ["em","https://zoom.us/j/93120697441?pwd=S0ViTVZLM3ZqSXAvVkcvUmF1Y2NMZz09","https://zoom.us/j/97990663010?pwd=NU5CRkJRTzF0azJnK0tLRXFyekJ4Zz09","","control"],
     //                     ["control","","em","","https://zoom.us/j/93120697441?pwd=S0ViTVZLM3ZqSXAvVkcvUmF1Y2NMZz09",""],
@@ -22,6 +22,10 @@ const TimeTableView=()=>{
     
         console.log(val);
 
+        c1span=3;
+        b1vis='d-none';
+        b1c1='T1';
+        mlurl='';
         switch (val) {
             case "1":
                 url=[["OS","https://zoom.us/j/94175953083?pwd=MU1yQlFQWUpRZTU2TzgxS0hab3JUZz09","","https://zoom.us/j/97316110359?pwd=YUxsYm5oZm16VGFaN1ZEQmptdHliQT09",""],
@@ -30,7 +34,11 @@ const TimeTableView=()=>{
                      ["","OS","https://zoom.us/j/94175953083?pwd=MU1yQlFQWUpRZTU2TzgxS0hab3JUZz09","","https://zoom.us/j/95751333219?pwd=WmY2c3krYldEWmEyNkg2MmpBQnJ2UT09"],
                      ["","","https://zoom.us/j/95751333219?pwd=WmY2c3krYldEWmEyNkg2MmpBQnJ2UT09","https://zoom.us/j/97316110359?pwd=YUxsYm5oZm16VGFaN1ZEQmptdHliQT09","OS"]];
                 sub=["OS","DAA","Compiler","","","Software",""];
-                     console.log(url);
+                c1span=2;
+                b1vis="" ;
+                b1c1="ML";
+                mlurl="";
+                console.log(url);
                 break;
             case "2":
                 url=[["https://zoom.us/j/92579959407?pwd=Wk5wdmo2K3FSNVVMbkR0MExtaCtsUT09","https://zoom.us/j/96031680033?pwd=Ti9vMU1neTdzRDBaYVphVXpYVUt5dz09","","",""],
@@ -58,14 +66,16 @@ const TimeTableView=()=>{
                      ["https://zoom.us/j/97150586097?pwd=TExjblZscTErTCswQkdjc1RWT01pdz09","","","",""]];
                 console.log(url);
                 sub=["HMT","Machine","DME","","MMM","",""];
+                
+
                 break;
             
             default:
                 url=[["https://zoom.us/j/97990663010?pwd=NU5CRkJRTzF0azJnK0tLRXFyekJ4Zz09","control","","",""],
-                        ["em","https://zoom.us/j/93120697441?pwd=S0ViTVZLM3ZqSXAvVkcvUmF1Y2NMZz09","https://zoom.us/j/97990663010?pwd=NU5CRkJRTzF0azJnK0tLRXFyekJ4Zz09","","control"],
-                        ["control","","em","","https://zoom.us/j/93120697441?pwd=S0ViTVZLM3ZqSXAvVkcvUmF1Y2NMZz09",""],
-                        ["https://zoom.us/j/93120697441?pwd=S0ViTVZLM3ZqSXAvVkcvUmF1Y2NMZz09","https://zoom.us/j/97990663010?pwd=NU5CRkJRTzF0azJnK0tLRXFyekJ4Zz09","control","","em"],
-                        ["","em","https://zoom.us/j/93120697441?pwd=S0ViTVZLM3ZqSXAvVkcvUmF1Y2NMZz09","","https://zoom.us/j/97990663010?pwd=NU5CRkJRTzF0azJnK0tLRXFyekJ4Zz09"]];
+                        ["https://zoom.us/j/99076479015?pwd=Vm12cGszcnZpRUJwcXoyYnpsNHNHQT09","https://zoom.us/j/93120697441?pwd=S0ViTVZLM3ZqSXAvVkcvUmF1Y2NMZz09","https://zoom.us/j/97990663010?pwd=NU5CRkJRTzF0azJnK0tLRXFyekJ4Zz09","","control"],
+                        ["control","","https://zoom.us/j/99076479015?pwd=Vm12cGszcnZpRUJwcXoyYnpsNHNHQT09","","https://zoom.us/j/93120697441?pwd=S0ViTVZLM3ZqSXAvVkcvUmF1Y2NMZz09",""],
+                        ["https://zoom.us/j/93120697441?pwd=S0ViTVZLM3ZqSXAvVkcvUmF1Y2NMZz09","https://zoom.us/j/97990663010?pwd=NU5CRkJRTzF0azJnK0tLRXFyekJ4Zz09","control","","https://zoom.us/j/99076479015?pwd=Vm12cGszcnZpRUJwcXoyYnpsNHNHQT09"],
+                        ["","https://zoom.us/j/99076479015?pwd=Vm12cGszcnZpRUJwcXoyYnpsNHNHQT09","https://zoom.us/j/93120697441?pwd=S0ViTVZLM3ZqSXAvVkcvUmF1Y2NMZz09","","https://zoom.us/j/97990663010?pwd=NU5CRkJRTzF0azJnK0tLRXFyekJ4Zz09"]];
                         sub=["Analog","Machines","Control","DSP","","",""];
                         console.log(url);
                 break;
@@ -74,8 +84,8 @@ const TimeTableView=()=>{
     
     setHTM(<>
         <h1>The Time Table</h1>
-        <div className="0">
-        <select className="form-select" style={{width:"fit-content"}}aria-label="Default select example" onChange={click}>
+        <div className="0 d-flex flex-column align-items-center">
+        <select className="form-select shadow-lg" style={{width:"fit-content" , margin:"0.5vw", backgroundColor:"transparent", border:"solid white 3px" , borderRadius:"20px"}}aria-label="Default select example" onChange={click}>
             <option value="1" >Computers</option>
             <option value="2" >Civil</option>
             <option value="3">Chemical</option>
@@ -88,23 +98,23 @@ const TimeTableView=()=>{
                   <th> 9:00AM</th>
                   <th> 10:00AM</th>
                   <th> 11:30AM</th>
-                  <th rowSpan="6" className='lunch'>l<br/>u<br/>n<br/>c<br/>h</th>
+                  <th rowSpan="6" className='lunch'>b<br/>r<br/>e<br/>a<br/>k</th>
                   <th> 12:20PM</th>
+                  <th rowSpan="6" className='lunch'>b<br/>r<br/>e<br/>a<br/>k</th>
                   <th> 14:10PM</th>
                   <th> 15:10PM</th>
                   <th> 16:10PM</th>
                   <th> 17:10PM</th>
                 </tr>
                 <tr>
-                  <td className="day" className="sub day">Mon</td>
+                  <td className="day">Mon</td>
                   <td className="sub a"><a href={url[0][0]}><div>{sub[0]}</div></a></td>
                   <td className="sub c"><a href={url[0][1]}><div>{sub[2]} </div></a></td>
                   <td className="sub e"><a href={url[0][2]}><div>{sub[4]}</div></a></td>
                   <td className="sub f"><a href={url[0][3]}><div>{sub[5]}</div></a></td>
                   <td className="sub g"><a href={url[0][4]}><div>{sub[6]}</div></a></td>
-                  <td className="sub a1"> a1</td>
-                  <td className="sub c1"> c1</td> 
-                  <td className="sub d1"> d1</td>
+                  <td className="sub p1" colSpan="3">P1</td>
+                  
                 </tr>
                 {console.log(url[0])}
                 <tr>
@@ -114,9 +124,8 @@ const TimeTableView=()=>{
                   <td className="sub a"><a href={url[1][2]}><div>{sub[0]}</div></a></td>
                   <td className="sub g"><a href={url[1][3]}><div>{sub[6]}</div></a></td>
                   <td className="sub ct"><a href={url[1][4]}><div>{sub[2]}</div></a></td>
-                  <td className="sub b1"> b1</td>
-                  <td className="sub d1"> d1</td>
-                  <td className="sub a1"> a1</td>
+                  <td className="sub q1" colSpan="3">Q1</td>
+                  
                 </tr>
     
                 <tr>
@@ -126,7 +135,7 @@ const TimeTableView=()=>{
                   <td className="sub b"><a href={url[2][2]}><div>{sub[1]}</div></a></td>
                   <td className="sub f"><a href={url[2][3]}><div>{sub[5]}</div></a></td>
                   <td className="sub dt"><a href={url[2][3]}><div>{sub[3]}</div></a></td>
-                  <td colSpan="3" className="sub"> seminar</td>
+                  <td colSpan="3" className="sem sub"> seminar</td>
                   
                 </tr>
                 <tr>
@@ -136,9 +145,8 @@ const TimeTableView=()=>{
                   <td className="sub c"><a href={url[3][2]}><div>{sub[2]}</div></a></td>
                   <td className="sub g"><a href={url[3][3]}><div>{sub[6]}</div></a></td>
                   <td className="sub bt"><a href={url[3][4]}><div>{sub[1]}</div></a></td>
-                  <td className="sub c1"> c1</td>
-                  <td className="sub a1"> a1</td>
-                  <td className="sub b1"> b1</td>
+                  <td className="sub s1" colSpan={c1span}>S1</td>
+                  <td className={`sub b1 ${b1vis}`}><a href={mlurl}><div>ML</div></a></td>
                 </tr>
                 <tr>
                   <td className="day">Fri</td>
@@ -147,9 +155,10 @@ const TimeTableView=()=>{
                   <td className="sub d"><a href={url[4][2]}><div>{sub[3]}</div></a></td>
                   <td className="sub f"><a href={url[4][3]}><div>{sub[5]}</div></a></td>
                   <td className="sub at"><a href={url[4][4]}><div>{sub[0]}</div></a></td>
-                  <td className="sub d1"> d1</td>
-                  <td className="sub b1"> b1</td>
-                  <td className="sub c1"> c1</td>
+                  <td className={`sub d1 ${b1vis}`} > </td>
+                  <td className="sub b1" colSpan={c1span}><a href={mlurl}><div> {b1c1}</div></a></td>
+
+                  <td className="sub c1 d-none"> c1</td>
                 </tr>
             </table>
             </div>
