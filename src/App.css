@@ -1,7 +1,13 @@
+html,body, #root {
+  height:100%;
+}
+
 .App {
   text-align: center;
   background: linear-gradient(to left, rgb(84, 51, 255), rgb(32, 189, 255), rgb(165, 254, 203));
-  height: 100vh;
+  min-height: 100%;
+  
+  background-attachment: fixed;
 }
 
 
@@ -10,37 +16,23 @@ h1{
    padding: 2vw 0 0 0;
    font-size: 4vw;
 }
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+a{
+  text-decoration: none;
+  color:black;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-
-
-
-
 a:hover{
   color:black;
 }
-  
+
+
 .slots, .day{
   font-size: 1.5vw;
   font-weight:bold ;
 }
 .sub{
   
-  border: solid 2px black ;
-  transition: transform 0.5s, border-radius 0.5s , font-weight 0.5s;
+  transition: transform 0.3s, border 0.3s , font-weight 0.3s, shadow 0.3s;
   font-size: 1.8vw;
   width:3vw!important;
   overflow: hidden;
@@ -49,23 +41,12 @@ a:hover{
 }
 .sub:hover{
   transform: scale(1.1);
-  border: solid 2px black ;
+  border: solid 2px transparent;
   border-radius: 20px;
   color:black;
-  box-shadow: 1px;
-
-  
+  box-shadow: 1px 1px 3px;
 }
 
-th, td{
-  border: solid 2px black;
-  border-collapse: separate;
-  border-radius: 0.7em;
-  overflow: hidden;
-  height: 5vw;
-  border-spacing: 10px;
-  
-}
 table{
   border-radius: 1.6em;
   border-collapse: separate;
@@ -74,17 +55,32 @@ table{
   box-sizing: content-box;
   padding: 10px;
   width: 70%;
+  margin: 1em auto 2em auto;
   background-color: rgba(255,255,255,0.5);
-  box-shadow: 3px 10px 20px ;
+  box-shadow: 0.8em 0.6em 1.2em ;
 }
 
-.day{
-  color:brown;
-  
-  
+th, td{
+  border: solid 0.13vw black;
+  border-collapse: separate;
+  border-radius: 0.7em;
+  overflow: hidden;
+  height: 5vw;
+  border-spacing: 10px;
 }
 
-@media (max-width: 768px)
+
+
+.dropdow{
+  width:fit-content;
+  margin:0.5vw;
+  background-color:transparent;
+  border:solid white 0.2vw;
+  border-radius:20vw; 
+  font-size:1vw;
+}
+
+@media only screen and (max-width: 768px)
 {
   .day{
     font-size: 2vw;
@@ -97,14 +93,23 @@ table{
   .sub{
     font-size: 2.5vw;
   }
-  
+  .dropdow{
+    font-size:1.8vw;
+    border:solid rgb(2, 2, 2) 0.5vw;
+    width:fit-content;
+  margin:0.5vw;
+  background-color:rgba(255, 255, 255, 0.221);
+  border:solid white 0.2vw;
+  border-radius:20vw; 
+
+  }
 }
 
 
+/*lets have a splash of colors*/
 
-th, td{
-  
-  overflow-x: hidden;
+.day{
+  color:brown;
 }
 
 .a, .at{
@@ -135,19 +140,29 @@ th, td{
 }
 
 .lunch{
-  width: 2vw;
+  width: 2.3vw;
   background:radial-gradient(circle, rgb(228, 226, 215) 6%, rgb(137, 225, 83) 96%)
 }
-.p1{ background:radial-gradient(circle, rgb(246, 245, 240) 6%, rgb(238, 138, 95) 96%)}
-.q1{ background:radial-gradient(circle, rgb(246, 245, 240) 6%, rgb(95, 238, 216) 96%)}
-.s1{ background:radial-gradient(circle, rgb(246, 245, 240) 6%, rgb(91, 107, 230) 96%)}
-.b1{ background:radial-gradient(circle, rgb(246, 245, 240) 6%, rgb(238, 95, 193) 96%)}
-.sem{ background:radial-gradient(circle, rgb(246, 245, 240) 6%, rgb(235, 71, 59) 96%)}
 
-
-
-a{
-  text-decoration: none;
-  color:black;
+.p1{ 
+  background:radial-gradient(circle, rgb(246, 245, 240) 6%, rgb(238, 138, 95) 96%)
 }
+
+.q1{ 
+  background:radial-gradient(circle, rgb(246, 245, 240) 6%, rgb(95, 238, 216) 96%)
+}
+
+.s1{ 
+  background:radial-gradient(circle, rgb(246, 245, 240) 6%, rgb(91, 107, 230) 96%)
+}
+
+.b1{ 
+  background:radial-gradient(circle, rgb(246, 245, 240) 6%, rgb(238, 95, 193) 96%)
+}
+
+.sem{ 
+  background:radial-gradient(circle, rgb(246, 245, 240) 6%, rgb(235, 71, 59) 96%)}
+
+
+
 
