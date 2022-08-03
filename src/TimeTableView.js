@@ -28,7 +28,7 @@ const TimeTableView=()=>{
                      ["https://zoom.us/j/94175953083?pwd=MU1yQlFQWUpRZTU2TzgxS0hab3JUZz09","","","https://zoom.us/j/97316110359?pwd=YUxsYm5oZm16VGFaN1ZEQmptdHliQT09",""],
                      ["","https://zoom.us/j/93988463459?pwd=RlRCWlFFQlQzaDFQTFU3UmZ4LzhZdz09","https://zoom.us/j/94175953083?pwd=MU1yQlFQWUpRZTU2TzgxS0hab3JUZz09","","https://zoom.us/j/95751333219?pwd=WmY2c3krYldEWmEyNkg2MmpBQnJ2UT09"],
                      ["","https://zoom.us/j/95751333219?pwd=WmY2c3krYldEWmEyNkg2MmpBQnJ2UT09","","https://zoom.us/j/97316110359?pwd=YUxsYm5oZm16VGFaN1ZEQmptdHliQT09","https://zoom.us/j/93988463459?pwd=RlRCWlFFQlQzaDFQTFU3UmZ4LzhZdz09"]];
-                sub=["OS","DAA","Compiler","","","Software",""];
+                sub=["OS","DAA","Compiler","","","Software","G"];
                 GFslot="12:50";
                 s1Colspan=2;
                 b1vis="" ;
@@ -43,7 +43,7 @@ const TimeTableView=()=>{
                      ["https://zoom.us/j/96031680033?pwd=Ti9vMU1neTdzRDBaYVphVXpYVUt5dz09","","","","https://zoom.us/j/99671746997?pwd=UGJLSGdsejMvRTBQMHd5SDFzRjlhQT09"],
                      ["https://zoom.us/j/99671746997?pwd=UGJLSGdsejMvRTBQMHd5SDFzRjlhQT09","https://zoom.us/j/92579959407?pwd=Wk5wdmo2K3FSNVVMbkR0MExtaCtsUT09","https://zoom.us/j/96031680033?pwd=Ti9vMU1neTdzRDBaYVphVXpYVUt5dz09","","/"],
                      ["","","https://zoom.us/j/99671746997?pwd=UGJLSGdsejMvRTBQMHd5SDFzRjlhQT09","","https://zoom.us/j/92579959407?pwd=Wk5wdmo2K3FSNVVMbkR0MExtaCtsUT09"]];
-                sub=["Envir.","","Water","BSSD","","",""];
+                sub=["Envir.","","Water","BSSD","","F","G"];
                 GFslot="12:50";
                 break;
 
@@ -54,7 +54,7 @@ const TimeTableView=()=>{
                      ["https://zoom.us/j/94265201337?pwd=dlVZNVo5ajFwd0QzR0E4aHIzWTlWdz09","","https://zoom.us/j/92778535798?pwd=RnhBeHUreXQ4YlhibTFaRFFrMitUQT09","https://zoom.us/j/99155885658?pwd=cFlIUFFiZ2VOWlp2VGNhSmhpNHR1dz09",""],
                      ["","https://zoom.us/j/99052946033?pwd=ZlN3OGZod25IRWQ4dXdKNTVrZGZBQT09","https://zoom.us/j/91069000114?pwd=QVR4T3htbUF2eHNsTjRCTWFZSlJoUT09","https://zoom.us/j/93931881854?pwd=NFByQXA1TGd0MHFoSTFEdjJYczUxZz09",""],
                      ["","https://zoom.us/j/99974764771?pwd=NDBJUnNHL2FXdEJNMmdjZ0ZOdDEyZz09","","https://zoom.us/j/93704957005?pwd=bzVsVURueld3UCtuanFNMGR3YTFhQT09",""]];
-                sub=["Transprt","HRE","SPP","CTCE","","",""];
+                sub=["Transprt","HRE","SPP","CTCE","","F","G"];
                 GFslot="12:20";
                 break;
 
@@ -65,7 +65,7 @@ const TimeTableView=()=>{
                      ["","https://zoom.us/j/97150586097?pwd=TExjblZscTErTCswQkdjc1RWT01pdz09","https://zoom.us/j/92119553350?pwd=Zjg5dG9oejNPNEFETmF1b2ptWXZ0UT09","",""],
                      ["","","","",""],
                      ["https://zoom.us/j/97150586097?pwd=TExjblZscTErTCswQkdjc1RWT01pdz09","https://zoom.us/j/92621859454?pwd=cWVidTJFbmpBUXdrKzE2MFJrRVNtUT09","","",""]];
-                sub=["HMT","Machine","DME","","MMM","",""];
+                sub=["HMT","Machine","DME","","MMM","F","G"];
                 GFslot="12:20";
                 break;
             
@@ -76,7 +76,7 @@ const TimeTableView=()=>{
                         ["control","","https://zoom.us/j/99076479015?pwd=Vm12cGszcnZpRUJwcXoyYnpsNHNHQT09","","https://zoom.us/j/93120697441?pwd=S0ViTVZLM3ZqSXAvVkcvUmF1Y2NMZz09",""],
                         ["https://zoom.us/j/93120697441?pwd=S0ViTVZLM3ZqSXAvVkcvUmF1Y2NMZz09","https://zoom.us/j/97990663010?pwd=NU5CRkJRTzF0azJnK0tLRXFyekJ4Zz09","control","","https://zoom.us/j/99076479015?pwd=Vm12cGszcnZpRUJwcXoyYnpsNHNHQT09"],
                         ["","https://zoom.us/j/99076479015?pwd=Vm12cGszcnZpRUJwcXoyYnpsNHNHQT09","https://zoom.us/j/93120697441?pwd=S0ViTVZLM3ZqSXAvVkcvUmF1Y2NMZz09","","https://zoom.us/j/97990663010?pwd=NU5CRkJRTzF0azJnK0tLRXFyekJ4Zz09"]];
-                sub=["Analog","Machines","Control","DSP","","",""];
+                sub=["Analog","Machines","Control","DSP","","F","G"];
                 GFslot="12:20";
                 break;
                 
@@ -125,7 +125,7 @@ const TimeTableView=()=>{
                               <td className="sub d"><a href={url[1][1]} target="_blank"><div>{sub[3]}</div></a></td>
                               <td className="sub a"><a href={url[1][2]} target="_blank"><div>{sub[0]}</div></a></td>
                               <td className="sub g"><a href={url[1][3]} target="_blank"><div>{sub[6]}</div></a></td>
-                              <td className="sub ct"><a href={url[1][4]} target="_blank"><div>{sub[2]}</div></a></td>
+                              <td className="sub ct tut" ><a href={url[1][4]} target="_blank"><div>{sub[2]}</div></a><span >T</span></td>
                               <td className="sub q1" colSpan="3">Q1</td>
                             </tr>
                 
@@ -135,7 +135,7 @@ const TimeTableView=()=>{
                               <td className="sub e"><a href={url[2][1]} target="_blank"><div>{sub[4]}</div></a></td>
                               <td className="sub b"><a href={url[2][2]} target="_blank"><div>{sub[1]}</div></a></td>
                               <td className="sub f"><a href={url[2][3]} target="_blank"><div>{sub[5]}</div></a></td>
-                              <td className="sub dt"><a href={url[2][3]} target="_blank"><div>{sub[3]}</div></a></td>
+                              <td className="sub dt tut"><a href={url[2][3]} target="_blank"><div>{sub[3]}</div></a><span >T</span></td>
                               <td colSpan="3" className="sem sub"> seminar</td>
                             </tr>
 
@@ -145,7 +145,7 @@ const TimeTableView=()=>{
                               <td className="sub a"><a href={url[3][1]} target="_blank"><div>{sub[0]}</div></a></td>
                               <td className="sub c"><a href={url[3][2]} target="_blank"><div>{sub[2]}</div></a></td>
                               <td className="sub g"><a href={url[3][3]} target="_blank"><div>{sub[6]}</div></a></td>
-                              <td className="sub bt"><a href={url[3][4]} target="_blank"><div>{sub[1]}</div></a></td>
+                              <td className="sub bt tut"><a href={url[3][4]} target="_blank"><div>{sub[1]}</div></a><span>T</span></td>
                               <td className="sub s1" colSpan={s1Colspan}>S1</td>
                               <td className={`sub b1 ${b1vis}`}><a href={mlurl} target="_blank"><div>ML</div></a></td>
                             </tr>
@@ -157,7 +157,7 @@ const TimeTableView=()=>{
                               <td className="sub b"><a href={url[4][1]} target="_blank"><div>{sub[1]}</div></a></td>
                               <td className="sub d"><a href={url[4][2]} target="_blank"><div>{sub[3]}</div></a></td>
                               <td className="sub f"><a href={url[4][3]} target="_blank"><div>{sub[5]}</div></a></td>
-                              <td className="sub at"><a href={url[4][4]} target="_blank"><div>{sub[0]}</div></a></td>
+                              <td className="sub at tut"><a href={url[4][4]} target="_blank"><div>{sub[0]}</div></a><span >T</span></td>
                               <td className={`sub d1 ${b1vis}`} > </td>
                               <td className="sub b1" colSpan={s1Colspan} ><a href={mlurl} target="_blank"><div>{b1}</div></a></td>
 
