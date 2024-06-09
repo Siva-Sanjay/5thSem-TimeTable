@@ -1,4 +1,4 @@
-# 5^Th Semester Time Table
+# 5th Semester Time Table
 
 A React.Js-based Timetable application, featuring a Dynamic TimeTable layout with all Zoom conference links corresponding to different classes embedded separately in each cell. Along with the functionality to switch between schedules of various departments namely, Electrical, Computers, Mechanical, Civil and Chemical Engineering. 
 
